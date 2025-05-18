@@ -67,12 +67,12 @@ st.write(f"Hello, {name}! You were born in {place_of_birth} on {dob} at {time_of
 
 question = " "
 
-if feature == "AI Chatbot for Astrology Q&A":
+if feature == "🤖 AI Chatbot for Astrology Q&A":
     question = st.text_input("Ask your astrology-related question here")
 
 button = st.button("Get AI Powered Insights")
 if button:
-    if feature == "Birth Chart / Kundli Generation":
+    if feature == "🪐Birth Chart / Kundli Generation":
         st.markdown("Generating your Birth Chart...")
          
         prompt=f"""Act as a Astrologer expert and Generate a detailed Vedic birth chart (Janam Kundli) based on the following details:
@@ -84,7 +84,7 @@ if button:
         st.markdown(generate_analysis(prompt=prompt))
         st.success("✅ Birth Chart generated successfully!")
     
-    elif feature == "Personality Insights":
+    elif feature == "🧠 Personality Insights":
         st.markdown("Analyzing your personality...")
         
         prompt=f"""Act as a Astrologer expert and Generate a detailed personality analysis based on the following details:
@@ -97,7 +97,7 @@ if button:
         st.markdown(generate_analysis(prompt=prompt))
         st.success("✅ Personality insights generated successfully!")
     
-    elif feature == "Career Path Predictions":
+    elif feature == "🚀 Career Path Predictions":
         st.markdown("Predicting your career path...")
         prompt=f"""Act as a Astrologer expert and Generate a detailed career path prediction based on the following details:
         Name: {name} 
@@ -110,7 +110,7 @@ if button:
         st.markdown(generate_analysis(prompt=prompt))
         st.success("✅ Career path predictions generated successfully!")
     
-    elif feature == "AI Chatbot for Astrology Q&A":
+    elif feature == "🤖 AI Chatbot for Astrology Q&A":
         st.write("Generating your AI Chatbot for Astrology Q&A...")
         prompt=f"""Act as an expert Vedic astrologer. Answer the user's astrology-related question 
         based on the following birth details:
@@ -135,6 +135,7 @@ st.markdown("""
         Made with ❤️ by Parul Nagar | Powered by Gemini + Streamlit
     </div>""",unsafe_allow_html=True
 )
+
 
 
 
